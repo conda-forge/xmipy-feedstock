@@ -1,5 +1,5 @@
 {% set name = "xmipy" %}
-{% set version = "1.3.1" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xmipy-{{ version }}.tar.gz
-  sha256: 608878fd497f8492353dc9aba849c0f99b175d3ff396fdd27e73fbc552b7d6bd
+  sha256: 4a7991e0a81dbc0c9cf9444bf758411313d5a2157d94d6133c806f2133698bb3
 
 build:
   noarch: python
