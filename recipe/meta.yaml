@@ -42,5 +42,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - mwtoews
     - jdhughes-usgs
     - deltares-service-account
