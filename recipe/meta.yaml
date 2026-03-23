@@ -11,13 +11,13 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
@@ -42,5 +42,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - jdhughes-usgs
+    - jdhughes-dev
+    - JoerivanEngelen
+    - mwtoews
     - deltares-service-account
